@@ -59,6 +59,8 @@ Implemented **LeNet-5** from scratch using **NumPy** to perform MNIST handwritte
 
 ### **Training Performance**
 
+Each time the program runs for 10 epochs, the final model generated from the last run is imported and trained for another 10 epochs. This process is repeated three times, totaling 30 epochs. Given that the batch size is set to 100 and the MNIST dataset contains 60,000 training samples, each epoch consists of **600 steps** (60,000 ÷ 100). Training for 10 epochs therefore results in a total of  **6,000 steps** .The resulting data is visualized using Origin, as shown below.
+
 ![Loss](image/1.png "Loss")
 
 ![Accuracy](image/2.png "Accuracy")
